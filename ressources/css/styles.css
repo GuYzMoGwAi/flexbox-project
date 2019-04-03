@@ -40,6 +40,7 @@ body {
 }
 
 .container {
+    background-color: rgb(126, 117, 117);
 
 }
 
@@ -279,7 +280,9 @@ Social media buttons
 
 }
 
-/* PHOTOS */
+/*===========================
+         PHOTOS 
+  ===========================*/
 
 .h1photos {
     text-align: center;
@@ -453,17 +456,14 @@ h1 {
 }
 
 ::-webkit-input-placeholder {
-    /* Chrome/Opera/Safari */
     color: #a9aacd;
 }
 
-::-moz-placeholder {
-    /* Firefox 19+ */
+::-moz-placeholder {    
     color: #a9aacd;
 }
 
 :-ms-input-placeholder {
-    /* IE 10+ */
     color: #a9aacd;
 }
 
@@ -502,7 +502,9 @@ h1 {
 }
 
 
-/*-------------footer---------------*/
+/*=============================
+        footer
+ ==============================*/
 
 footer {
     background-color: black;
