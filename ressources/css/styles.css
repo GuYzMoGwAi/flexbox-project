@@ -92,6 +92,12 @@ header {
 
 .main-menu .toggleNav {
     display: none;
+    overflow: hidden;
+}
+
+.main-menu .toogleNav:after {
+    display: inline-flex;
+    overflow: visible;
 }
 
 .main-menu a.bg {
@@ -298,11 +304,10 @@ Social media buttons
 h1.evenement {
     display: flex;
     justify-content: center;
-    margin: 20px 450px 20px 450px;
-    padding: 20px 0 20px 0;
-    border-radius: 25px;
-    border: 5px outset #ac9458;
+    padding: 20px 0 0 0;
     color: black;
+    text-decoration: underline;
+    text-underline-position: under;
 }
 
 .photo-evenement {
@@ -314,8 +319,9 @@ h1.evenement {
     display: flex;
     justify-content: center;
     padding: 10px 0 10px 0;
-    border: 4px outset black;
+    border: 4px inset black;
     margin-right: 10px;
+    border-radius: 30px;
 }
 
 .nostrong {
@@ -324,6 +330,7 @@ h1.evenement {
     padding: 10px 0 10px 0;
     border: 4px outset black;
     margin-right: 10px;
+    border-radius: 30px;
 }
 
 .tarif {
@@ -331,7 +338,7 @@ h1.evenement {
     justify-content: center;
     flex-direction: column-reverse;
     border: 2px outset black;
-    border-radius: 10px;
+    border-radius: 40px;
 }
 
 .map1{
@@ -368,21 +375,23 @@ h1.evenement {
     justify-content: center;
 }
 
+@media screen and (max-width: 768px) {
+    .photo-evenement {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
 /*===========================
          PHOTOS 
   ===========================*/
 
 .h1photos {
     text-align: center;
-    font-size: 20px;
     padding: 70px 0 15px 0;
     color: black;
-}
-
-#photo {
-    max-width: 100%;
-    margin: 0;
-    padding: 2rem 0;
+    text-decoration: underline;
+    text-underline-position: under;
 }
 
 
@@ -391,6 +400,10 @@ h1.evenement {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    background-image: url(../images/Kraken2.jpeg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #galerie img {
@@ -401,18 +414,18 @@ h1.evenement {
     max-height: 200px;
     margin: 0.5rem;
     object-fit: cover;
-    border: 1px solid #28323B;
-    border-radius: 5px;
+    border: 2px inset rgb(116, 135, 151);
+    border-radius: 10px;
     box-shadow: 2px 2px 2px #28323B;
     transform: scale(1);
-    transition: transform 1s;
+    transition: transform 2s;
 }
 
 #galerie img:hover {
     transform-origin: 50% 50%;
     transform: scale(2);
     z-index: 999;
-    border-radius: 5px;
+    border-radius: 10px;
 
 }
 
@@ -542,7 +555,7 @@ h1 {
 }
 
 .fab:hover {
-    color: #fff;
+    color: rgb(8, 8, 8);
 }
 
 ::-webkit-input-placeholder {
@@ -554,7 +567,7 @@ h1 {
 }
 
 :-ms-input-placeholder {
-    color: #a9aacd;
+    color: #c2a9cd;
 }
 
 @media screen and (max-width: 640px) {
