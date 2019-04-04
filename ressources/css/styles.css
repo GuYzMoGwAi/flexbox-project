@@ -9,8 +9,6 @@ html {
 * {
     box-sizing: border-box;
     list-style-type: none;
-    padding: 0;
-    margin: 0;
     text-decoration: none;
 }
 
@@ -40,7 +38,7 @@ body {
 }
 
 .container {
-    background-color: rgb(126, 117, 117);
+    background-color: rgb(255, 255, 255);
 
 }
 
@@ -96,16 +94,29 @@ header {
     display: none;
 }
 
+.main-menu a.bg {
+    background-color: #dddddd;
+}
+
 .main-menu a {
     width: 100%;
     text-align: center;
     padding: .75em 1em;
     display: block;
     color: rgb(2, 2, 2);
-    border-bottom: 2px solid #ddd;
+    border-bottom: 5px solid #ddd;
 }
 
 .main-menu a:hover {
+    color: #c73d3d;
+    border-bottom-color: #ffffff;
+}
+
+.main-menu a i {
+    color: white;
+}
+
+.main-menu a i:hover {
     color: #c73d3d;
     border-bottom-color: #ffffff;
 }
@@ -280,6 +291,83 @@ Social media buttons
 
 }
 
+/*============================
+        Evenement
+============================*/
+
+h1.evenement {
+    display: flex;
+    justify-content: center;
+    margin: 20px 450px 20px 450px;
+    padding: 20px 0 20px 0;
+    border-radius: 25px;
+    border: 5px outset #ac9458;
+    color: black;
+}
+
+.photo-evenement {
+    display: flex;
+    justify-content: center;
+}
+
+.strong {
+    display: flex;
+    justify-content: center;
+    padding: 40px 0 10px 0;
+    border: 4px outset black;
+    margin-right: 10px;
+}
+
+.nostrong {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0 10px 0;
+    border: 4px outset black;
+    margin-right: 10px;
+}
+
+.tarif {
+    display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+    border: 2px outset black;
+    border-radius: 10px;
+}
+
+.map1{
+    display: flex;
+    margin: 0 auto;
+    height: 440px;
+    padding-top: 40px;
+}
+
+.description {
+    justify-content: flex-end;
+    background-color: #ac9458;
+    width: 500px;
+}
+
+
+.flexbox-container {
+    display: flex;
+    justify-content: center;
+    color: black;
+    margin-top: 25px;
+}
+
+.flexbox-container > div {
+    padding: 20px 0 0 0;
+    justify-content: center;
+}
+
+.flexbox-container > div:first-child {
+	margin-right: 20px;
+}
+
+.date {
+    justify-content: center;
+}
+
 /*===========================
          PHOTOS 
   ===========================*/
@@ -328,7 +416,9 @@ Social media buttons
 
 }
 
-/*----------Contact-------------*/
+/*==============================
+            Contact
+==============================*/
 
 .contactcontainer {
     background-image: url(../images/k1.jpg);
