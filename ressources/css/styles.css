@@ -191,7 +191,7 @@ Social media buttons
 /*====================================
   MEDIA QUERIES
 ====================================*/
-@media all and (max-width:500px) {
+@media all and (max-width:768px) {
     .main-menu li {
         flex-basis: 100%
     }
@@ -222,7 +222,7 @@ Social media buttons
     }
 }
 
-@media (min-width: 550px) {
+@media (min-width: 768px) {
 
 
     /*====================================
@@ -341,11 +341,11 @@ h1.evenement {
     border-radius: 40px;
 }
 
-.map1{
+.map1 {
     display: flex;
     margin: 0 auto;
     height: 440px;
-    padding-top: 40px;
+    padding-top: 50px;
 }
 
 .description {
@@ -362,13 +362,13 @@ h1.evenement {
     margin-top: 25px;
 }
 
-.flexbox-container > div {
+.flexbox-container>div {
     padding: 20px 0 0 0;
     justify-content: center;
 }
 
-.flexbox-container > div:first-child {
-	margin-right: 20px;
+.flexbox-container>div:first-child {
+    margin-right: 20px;
 }
 
 .date {
@@ -377,8 +377,23 @@ h1.evenement {
 
 @media screen and (max-width: 768px) {
     .photo-evenement {
+        display: flex;
+        justify-content: center;
         flex-direction: column;
         align-items: center;
+    }
+
+    .strong {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
 
@@ -461,16 +476,25 @@ h1.evenement {
 h1 {
     text-align: center;
     text-transform: uppercase;
-    color: #fff;
     margin-bottom: 50px;
     font-size: 35px;
+    color: black;
+}
+
+.h1contact {
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    font-size: 35px;
+    color: #fff;
 }
 
 .address {
     display: flex;
     justify-content: space-around;
     text-align: center;
-    color: rgb(255, 255, 255);;
+    color: rgb(255, 255, 255);
+    ;
     margin-bottom: 50px;
 }
 
@@ -555,14 +579,14 @@ h1 {
 }
 
 .fab:hover {
-    color: rgb(8, 8, 8);
+    color: rgb(32, 57, 124);
 }
 
 ::-webkit-input-placeholder {
     color: #a9aacd;
 }
 
-::-moz-placeholder {    
+::-moz-placeholder {
     color: #a9aacd;
 }
 
